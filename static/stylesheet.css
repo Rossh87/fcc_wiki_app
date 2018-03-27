@@ -1,0 +1,116 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color:#3A3F51;
+}
+
+form {
+	display:inline-block;
+	height:2rem;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	width:75%;
+}
+
+input {
+	height:2rem;
+	border:none;
+	background-color: #3A3F51;
+	font-size:1.2rem;
+	color:inherit;
+	width:100%;
+	box-sizing: border-box;
+	border-radius:10px;
+}
+
+input:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+img {
+	max-width: 15%;
+	margin-top: 1rem;
+}
+
+.container {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding:2rem;
+}
+
+.main {
+	color:white;
+	font-size:1.5rem;
+	font-family:helvetica;
+	width:50%;
+	text-align:center;
+	margin-top: 15%;
+}
+
+.main-to-top {
+	margin-top: 1rem;
+}
+
+.inputContainer {
+	width:50%;
+	margin: 1.25rem auto;
+	border:3px solid #dd9711;
+	border-radius:10px;
+	height:2rem;
+	transition:all 0.3s linear 0.2s;
+	overflow: hidden;
+	display:none;
+}
+
+.searchResults {
+	width:80%;
+	opacity: 0;
+	margin-top:100%;
+	transition: opacity 0.2s linear 0.2s;
+	transition: margin-top 0.4s linear 0.2s;
+}
+
+.show {
+	margin-top: 1rem;
+	opacity: 1;
+}
+
+.childResult {
+	margin:1rem;
+	background:white;
+	padding:1rem;
+}
+
+.childResult:hover {
+	border-left:0.5rem solid #dd9711;
+	padding-left: 0.5rem;
+	cursor:pointer;
+}
+
+.inputContainer a {
+	line-height: 2rem;
+	float:right;
+	margin-right:10px;
+}
+
+.icon {
+	background-image: url("lense.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.icon:hover {
+	cursor:pointer;
+}
+
+
